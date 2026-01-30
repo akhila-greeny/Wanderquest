@@ -1,0 +1,60 @@
+/* Global body styles */
+body {
+  background: #f6efe7;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dashboard container */
+.dash-container {
+  width: 90%;
+  max-width: 450px;
+  margin: 70px auto;
+  text-align: center;
+  background: #fffdf8;
+  padding: 50px;
+  border-radius: 16px;
+  border: 2px solid #d9c8a9;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* Menu styling */
+.menu {
+  margin-top: 30px;
+  display: grid;
+  gap: 12px;
+}
+
+.menu a {
+  padding: 12px;
+  background: #fff4d6;
+  border-radius: 8px;
+  border: 1px solid #d9c8a9;
+  color: #444;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  background: #ffe7ad;
+}
+
+/* Logout button styling */
+.logout-btn {
+  margin-top: 25px;
+  padding: 12px;
+  width: 100%;
+  background: #ffd6d6;
+  border: 1px solid #d9c8a9;
+  border-radius: 8px;
+  color: #444;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background: #ffb4b4;
+}

@@ -1,0 +1,210 @@
+/* ===================== */
+/* Container & Layout    */
+/* ===================== */
+.tripdetail-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fffdf7;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  padding: 25px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+}
+
+/* Headings */
+.tripdetail-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #2b2b2b;
+}
+
+.tripdetail-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.tripdetail-container h3 {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #444;
+  border-bottom: 2px solid #ffca85;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Back Button */
+.back-button {
+  margin-bottom: 20px;
+  padding: 6px 14px;
+  background: #ffca85;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.back-button:hover {
+  background: #ffc164;
+}
+
+/* Map */
+.leaflet-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+/* Inputs & Textareas */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Buttons */
+button {
+  background: #ffca85;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #ffc164;
+  transform: scale(1.03);
+}
+
+/* ===================== */
+/* Journal Boxes         */
+/* ===================== */
+.journal-box, .journal-entry {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  word-wrap: break-word;
+}
+
+/* Journal Buttons */
+.journal-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.journal-buttons button {
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #ffd699;
+}
+
+.journal-buttons button:hover {
+  background: #ffca85;
+}
+
+/* ===================== */
+/* Journal Images        */
+/* ===================== */
+.journal-photo, .journal-preview {
+  max-width: 100%;
+  max-height: 180px;
+  display: block;
+  margin-top: 10px;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Remove Image Button */
+.remove-image-btn {
+  background: #ff6b6b;
+  color: #fff;
+  margin-top: 6px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.remove-image-btn:hover {
+  background: #ff4c4c;
+}
+
+/* ===================== */
+/* Lightbox Overlay      */
+/* ===================== */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox-overlay img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.lightbox-overlay:hover {
+  cursor: pointer;
+}
+
+/* ===================== */
+/* Check-Ins List        */
+/* ===================== */
+ul {
+  padding: 0;
+  margin-top: 12px;
+}
+
+ul li {
+  list-style: none;
+  background: #fff3d6;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* ===================== */
+/* Responsive tweaks     */
+/* ===================== */
+@media screen and (max-width: 600px) {
+  .tripdetail-container {
+    padding: 15px;
+  }
+
+  .leaflet-container {
+    height: 250px;
+  }
+
+  .journal-photo, .journal-preview {
+    max-height: 140px;
+  }
+}

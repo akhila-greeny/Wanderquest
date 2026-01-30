@@ -1,0 +1,151 @@
+body {
+  background: #f6efe7;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.explore-page {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.explore-page h2 {
+  color: #5a4634;
+  margin-bottom: 40px;
+  font-size: xx-large;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.explore-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.explore-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Popup Background */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Popup Box */
+.popup-box {
+  background: #fffdf8;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+  border: 2px solid #d9c8a9;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.popup-box h2 {
+  text-align: center;
+  color: #5a4634;
+  margin-bottom: 15px;
+}
+
+.popup-box ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.popup-box li {
+  background: #fff4d6;
+  border: 1px solid #d9c8a9;
+  border-radius: 8px;
+  margin: 6px 0;
+  padding: 8px 10px;
+}
+
+.popup-box button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #ffb74b;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.popup-box button:hover {
+  background: #ff9a36;
+}
+
+/* ✨ ANIMATIONS ✨ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 0.35s ease forwards;
+}

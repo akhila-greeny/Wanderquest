@@ -1,0 +1,148 @@
+.journal-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fffdf7;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+}
+
+.journal-container h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #2b2b2b;
+}
+
+.journal-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.journal-container input,
+.journal-container textarea {
+  padding: 12px;
+  border: 1px solid #e6d8c3;
+  border-radius: 10px;
+  font-size: 15px;
+  resize: none;
+  background: #fffdf9;
+  transition: all 0.2s ease-in-out;
+}
+
+.journal-container input:focus,
+.journal-container textarea:focus {
+  outline: none;
+  border-color: #ffca85;
+  box-shadow: 0 0 4px #ffca85;
+}
+
+.journal-container button {
+  background-color: #ffca85;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.journal-container button:hover {
+  background-color: #ffc164;
+  transform: scale(1.03);
+}
+
+.entries {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.entry-card {
+  background: #fff3d6;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.entry-card h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.entry-card p {
+  margin: 0 0 6px 0;
+  color: #444;
+}
+
+.entry-card small {
+  display: block;
+  color: #777;
+  font-size: 13px;
+}
+
+.entry-card button {
+  background-color: #f8a978;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 5px;
+}
+
+.entry-card button:hover {
+  background-color: #f5945e;
+}
+
+.trip-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.trip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.trip-btn {
+  background-color: #ffca85;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.trip-btn:hover {
+  background-color: #ffc164;
+  transform: scale(1.05);
+}
+
+.back-btn {
+  background-color: #f1e0c6;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #ffca85;
+  transform: scale(1.03);
+}

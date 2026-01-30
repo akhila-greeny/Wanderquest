@@ -1,0 +1,78 @@
+/* ===================== */
+/* Auth Page Styling     */
+/* ===================== */
+.auth-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fffdf7;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* Titles */
+.auth-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #2b2b2b;
+}
+
+/* Inputs */
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.auth-container input:focus {
+  border-color: #ffca85;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 202, 133, 0.6);
+}
+
+/* Buttons */
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #ffd699;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.auth-container button:hover {
+  background: #ffca85;
+  transform: scale(1.02);
+}
+
+/* Links */
+.auth-container a {
+  color: #ff9d00;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+  color: #ff7b00;
+}
+
+/* Paragraphs */
+.auth-container p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
